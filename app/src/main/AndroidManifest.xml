@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Expense"
         tools:targetApi="31">
+
+        <!-- MainActivity with Launcher Intent -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -19,10 +21,44 @@
             android:theme="@style/Theme.Expense">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- Welcome Screen -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:label="Welcome"
+            android:theme="@style/Theme.Expense" />
+
+        <!-- Login Screen -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="Login"
+            android:theme="@style/Theme.Expense" />
+
+        <!-- Registration Screen -->
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="true"
+            android:label="Register"
+            android:theme="@style/Theme.Expense" />
+
+        <!-- Home Screen -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="Home"
+            android:theme="@style/Theme.Expense" />
+
+        <!-- User Profile Screen -->
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="true"
+            android:label="Profile"
+            android:theme="@style/Theme.Expense" />
+
+    </application>
 </manifest>
